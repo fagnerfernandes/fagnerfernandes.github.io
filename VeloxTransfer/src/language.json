@@ -1,0 +1,25 @@
+{
+  "br" : {
+    "fields" : {
+      "name" : "Nome",
+      "lastName" : "Sobrenome",
+      "bank" : "Banco",
+      "agency" : "Agência",
+      "account" : "Conta",
+      "idNumber" : "CPF",
+      "areaCode" : "Cód. Área",
+      "phoneNumber" : "Número de telefone",
+      "email" : "E-mail",
+      "address" : "Endereço",
+      "complement" : "Complemento",
+      "city" : "Cidade",
+      "state" : "Estado",
+      "postalCode" : "CEP / Código postal"
+    }
+  },
+  "en" : {
+    "fields" : {
+      
+    }
+  }
+}
