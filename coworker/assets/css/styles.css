@@ -55,11 +55,16 @@ a.white-btn:hover{
 
 @media only screen and (max-width: 768px){
 	a.orange-btn {
-		padding: 17px 22px;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 15px;
 	}
 
 	a.white-btn {
-		padding: 17px 22px;
+		text-align: center;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 15px;
 	}
 }
 /** Default **/
@@ -78,14 +83,14 @@ header #logo img {
 }
 
 /** > 768 **/
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 768px){
 	header #menusDesktop {
 		text-align: right;
 		margin-top: 24px;
 		display: block;
 	}
 
-	header #menusMobile {
+	header #menusMobile,  header #menusMobileItens {
 		display: none;
 	}
 
@@ -116,65 +121,78 @@ header #logo img {
 		display: none;
 	}
 
-	header #menusMobile {
-		text-align: right;
-		position: absolute;
+	header #menusMobile, header #menusMobileItens {
 		display: block;
 		width: 100%;
 		z-index: 10;
+		text-align: right;
 	}
 
 	header #menusMobile i {
-		padding: 20px 10px;
+		padding: 20px 0;
+		font-size: 40px;
+    	color: #666;
 	}
 
-	header #menusMobile ul{
+	header #menusMobileItens ul{
 		padding-inline-start: 0;
 	}
 
-	header #menusMobile ul .menu-item{
+	header #menusMobileItens ul .menu-item{
 		list-style: none;
 		text-align: left;
 	}
 
-	header #menusMobile ul li{
+	header #menusMobileItens ul li{
 		padding: 15px;
 	}
 
-	header #menusMobile ul li a{
+	header #menusMobileItens ul li a{
 		color: #0d222c;
 	}
 
-	header #menusMobile .btn-menu-open {
+	header #menusMobileItens .btn-menu-open {
 		font-size: 40px;
 		color: #666;
+		position: relative;
+    	bottom: 64px;
 	}
 
-	header #menusMobile .btn-menu-close {
+	header #menusMobileItens .btn-menu-close {
 		font-size: 40px;
 		color: #666;
-		padding: 8px 10px;
+		padding: 8px 42px;
 		background-color: #FFF;
 		height: 80px;
 		-webkit-box-shadow: 0 0 14px rgba(0,0,0,.08); 
 		box-shadow: 0 0 14px rgba(0,0,0,.08);
 	}
 
-	header #menusMobile .menu {
-		position: absolute;
+	header #menusMobileItens .menu {
 		width: 100%;
-		top: 0;
-		transform: translateX(-100%);
+		transform: translateX(-101%);
 		transition: transform 200ms linear;
+		list-style: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: #FFF;
+		height: 100%;
 	}
 
-	header #menusMobile .menu-open {
+	header #menusMobileItens .menu-open {
 		transform: translateX(0);
 		position: fixed;
 		background-color: #fff;
 		height: 100%;
 	}
 
+}
+/** < 576 **/
+@media only screen and (max-width: 576px){
+	header #menusMobileItens .btn-menu-close {
+		padding: 8px 19px;
+	}
 }
 /** Header **/
 
@@ -205,9 +223,14 @@ header #logo img {
 #boxFirstDetails .float {
 	text-align: right;
 }
+
 @media only screen and (max-width: 768px){
 	#boxFirstDetails .float{
 		text-align: center;
+	}
+
+	#boxFirstDetails p {
+		margin-bottom: 25px;
 	}
 }
 /** #boxFirstDetails **/
@@ -352,16 +375,35 @@ header #logo img {
 	margin-bottom: 15px;
 }
 
-#boxPrice .box-about-description-price {
-	margin-top: 50px;
+#boxPrice .box-about-description-price-mobile {
+	display: none;
 }
 
-#boxPrice .box-about-description-price span{
+#boxPrice .box-about-description-price {
+	margin-top: 20px;
+}
+
+#boxPrice .box-about-description-price-mobile {
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+#boxPrice .box-about-description-price span, #boxPrice .box-about-description-price-mobile span {
 	font-weight: bold;
 }
 
-#boxPrice .box-about-description-price a{
+#boxPrice .box-about-description-price a, #boxPrice .box-about-description-price-mobile a {
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+	#boxPrice .box-about-description-price {
+		display: none;
+	}
+	
+	#boxPrice .box-about-description-price-mobile {
+		display: block;
+	}
 }
 /** #boxPrice **/
 
@@ -376,7 +418,23 @@ header #logo img {
 }
 
 #boxPhotos .row {
-	padding-bottom: 15px;
+	padding-bottom: 30px;
+}
+
+#boxPhotos .image-box{
+	object-fit: cover;
+    width: 100%;
+    height: 193.35px;
+}
+
+@media only screen and (max-width: 768px){
+	#boxPhotos .row {
+		padding-bottom: 0px;
+	}
+
+	#boxPhotos .col-md-3 {
+		padding-bottom: 15px;
+	}
 }
 /** #boxPhotos **/
 

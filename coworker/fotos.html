@@ -7,6 +7,7 @@
         <!-- /css -->
         <link rel="stylesheet" href="./assets/library/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/library/fontawesome/5.8.2/css/all.min.css">
+        <link rel="stylesheet" href="./assets/library/Gallery-2.36.0/css/blueimp-gallery.min.css"/>
         <link rel="stylesheet" href="./assets/css/fonts.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
         <!-- ./css -->
@@ -23,17 +24,20 @@
                             <img src="./assets/images/logo.png" />
                         </a>
                     </div>
+                    
                     <div id="menusDesktop" class="col-8">
                         <ul>
                             <li><a href="#">Localização</a></li>
                             <li><a href="#">Planos</a></li>
-                            <li><a href="./fotos.html">Fotos</a></li>
+                            <li><a target="_self" href="./fotos.html">Fotos</a></li>
                         </ul>
                     </div>
 
-                    <div id="menusMobile">
+                    <div id="menusMobile" class="col-8">
                         <a href="#" class="btn-menu btn-menu-open"><i class="fas fa-bars"></i></a>
-                    
+                    </div>
+
+                    <div id="menusMobileItens">
                         <ul id="menu" class="menu">
                             <li class="btn-menu btn-menu-close">X</li>
                             <li class="menu-item">
@@ -43,7 +47,7 @@
                                 <a class="menu-item-action" href="#">Planos</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-action" href="./fotos.html">Fotos</a>
+                                <a class="menu-item-action" target="_self" href="./fotos.html">Fotos</a>
                             </li>
                         </ul>
                     </div>
@@ -53,41 +57,67 @@
 
         <section id="boxPhotos">
             <div class="container">
-                <h3>Nossas salas</h3>
+                <h3>Nosso espaço</h3>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
-                    </div>
-
-                    <div class="col-md-3">
-                        <img src="./assets/images/hot-desk.jpg" alt="..." class="img-thumbnail">
-                    </div>
-
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
-                    </div>
-
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
-                    </div>
+      
+                <!-- The Gallery as lightbox dialog -->
+                <div id="blueimp-gallery" class="blueimp-gallery">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
+
+                <!-- The container for the list of example images -->
+                <div id="links">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_01.jpg">
+                                <img src="./assets/images/gallery/img_01.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_02.jpg">
+                                <img src="./assets/images/gallery/img_02.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_03.jpg">
+                                <img src="./assets/images/gallery/img_03.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_04.jpg">
+                                <img src="./assets/images/gallery/img_04.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
-                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_05.jpg">
+                                <img src="./assets/images/gallery/img_05.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
 
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
-                    </div>
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_06.jpg">
+                                <img src="./assets/images/gallery/img_06.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
 
-                    <div class="col-md-3">
-                        <img src="./assets/images/dedicated-desk.jpg" alt="..." class="img-thumbnail">
+                        <div class="col-md-3">
+                            <a href="./assets/images/gallery/img_07.jpg">
+                                <img src="./assets/images/gallery/img_07.jpg" alt="..." class="img-thumbnail image-box"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,7 +177,7 @@
                         <ul>
                             <li><a href="#">Localização</a></li>
                             <li><a href="#">Planos</a></li>
-                            <li><a href="./fotos.html">Fotos</a></li>
+                            <li><a target="_self" href="./fotos.html">Fotos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -157,7 +187,19 @@
         <!-- /js -->
         <script src="./assets/library/jquery/3.4.1.slim.min.js"></script>
         <script src="./assets/library/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="./assets/library/Gallery-2.36.0/js/blueimp-gallery.min.js"></script>
         <script src="./assets/js/menu.js"></script>
+        <!-- /gallery -->
+        <script>
+            document.getElementById('links').onclick = function(event) {
+                event = event || window.event
+                var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = { index: link, event: event },
+                links = this.getElementsByTagName('a')
+                blueimp.Gallery(links, options)
+            }
+        </script><!-- ./gallery -->
         <!-- ./js -->
     </body>
 </html>

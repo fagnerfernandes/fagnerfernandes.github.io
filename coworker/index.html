@@ -27,13 +27,15 @@
                         <ul>
                             <li><a href="#">Localização</a></li>
                             <li><a href="#">Planos</a></li>
-                            <li><a href="./fotos.html">Fotos</a></li>
+                            <li><a target="_self" href="./fotos.html">Fotos</a></li>
                         </ul>
                     </div>
 
-                    <div id="menusMobile">
+                    <div id="menusMobile" class="col-8">
                         <a href="#" class="btn-menu btn-menu-open"><i class="fas fa-bars"></i></a>
-                    
+                    </div>
+
+                    <div id="menusMobileItens">
                         <ul id="menu" class="menu">
                             <li class="btn-menu btn-menu-close">X</li>
                             <li class="menu-item">
@@ -43,7 +45,7 @@
                                 <a class="menu-item-action" href="#">Planos</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-item-action" href="./fotos.html">Fotos</a>
+                                <a class="menu-item-action" target="_self" href="./fotos.html">Fotos</a>
                             </li>
                         </ul>
                     </div>
@@ -62,7 +64,8 @@
                     <div class="col-md-12 float">
                         <a class="orange-btn" href="#" target="_blank">Agende uma visita</a>
                         <a class="white-btn" href="#" target="_blank">Planos</a>
-                    </div>
+                    </div>                   
+
                 </div>
             </div>
         </section>
@@ -73,9 +76,6 @@
                     <div class="col-md-12">
                         <h2>Paradise Coworking Space - Santos</h2>
                         <p>Não seja um Eremita, trabalhe com outros programadores iguais a você e compartilhe conhecimento.</p>
-                        <div class="boxImagePrincipalIcons">
-                            
-                        </div>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
 
                     <div class="col-md-6 float mt-4">
                         <a class="orange-btn" href="#" target="_blank">Planos</a>
-                        <a class="white-btn" href="./fotos.html" target="_blank">Fotos</a>
+                        <a class="white-btn" target="_self" href="./fotos.html" target="_blank">Fotos</a>
                     </div>
                 </div>
             </div>
@@ -125,14 +125,15 @@
                                                 <li><i class="fas fa-phone"></i> <span>Phone Booth Access</span></li>
                                                 <li><i class="fas fa-mug-hot"></i> <span>Unlimited Coffee and Tea</span></li>
                                                 <li><i class="fas fa-print"></i> <span>Free printers</span></li>
+                                                <li><i class="fab fa-bitcoin"></i> <span>Aceita BTC como pagamento</span></li>
                                             </ul>
                                         </div>
-                                        <div class="box-about-description-price">
+                                        <div class="box-about-description-price-mobile">
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-6">
                                                     <span>R$ 40,00 / Dia</span>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-6 text-right">
                                                     <a class="purchasebutton daypass" href="#">
                                                         <p class="purchasebutton daypass">Mais detalhes <i class="  fas fa-arrow-right"></i></p>
                                                     </a>
@@ -152,14 +153,15 @@
                                                 <li><i class="far fa-clock"></i> <span>24/7 Acccess to the Workspace</span></li>
                                                 <li><i class="far fa-handshake"></i> <span>Conference room</span></li>
                                                 <li><i class="fas fa-user-astronaut"></i> <span>Good people</span></li>
+                                                <li><i class="fab fa-bitcoin"></i> <span>Aceita BTC como pagamento</span></li>
                                             </ul>
                                         </div>
-                                        <div class="box-about-description-price">
+                                        <div class="box-about-description-price-mobile">
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-6">
                                                     <span>R$ 40,00 / Dia</span>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-6 text-right">
                                                     <a class="purchasebutton daypass" href="#">
                                                         <p class="purchasebutton daypass">Mais detalhes <i class="  fas fa-arrow-right"></i></p>
                                                     </a>
@@ -178,15 +180,15 @@
                                             <ul>
                                                 <li><i class="far fa-clock"></i> <span>24/7 Acccess to the Workspace</span></li>
                                                 <li><i class="far fa-handshake"></i> <span>Conference room</span></li>
-                                                <li><i class="fas fa-user-astronaut"></i> <span>Good people</span></li>
+                                                <li><i class="fab fa-bitcoin"></i> <span>Aceita BTC como pagamento</span></li>
                                             </ul>
                                         </div>
-                                        <div class="box-about-description-price">
+                                        <div class="box-about-description-price-mobile">
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-6">
                                                     <span>R$ 40,00 / Dia</span>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-6 text-right">
                                                     <a class="purchasebutton daypass" href="#">
                                                         <p class="purchasebutton daypass">Mais detalhes <i class="  fas fa-arrow-right"></i></p>
                                                     </a>
@@ -195,6 +197,52 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-md-4">
+                                    <div class="box-about-description-price">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <span>R$ 40,00 / Dia</span>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <a class="purchasebutton daypass" href="#">
+                                                    <p class="purchasebutton daypass">Mais detalhes <i class="  fas fa-arrow-right"></i></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="box-about-description-price">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <span>R$ 40,00 / Dia</span>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <a class="purchasebutton daypass" href="#">
+                                                    <p class="purchasebutton daypass">Mais detalhes <i class="  fas fa-arrow-right"></i></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="box-about-description-price">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <span>R$ 40,00 / Dia</span>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <a class="purchasebutton daypass" href="#">
+                                                    <p class="purchasebutton daypass">Mais detalhes <i class="  fas fa-arrow-right"></i></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -256,7 +304,7 @@
                         <ul>
                             <li><a href="#">Localização</a></li>
                             <li><a href="#">Planos</a></li>
-                            <li><a href="./fotos.html">Fotos</a></li>
+                            <li><a target="_self" href="./fotos.html">Fotos</a></li>
                         </ul>
                     </div>
                 </div>
