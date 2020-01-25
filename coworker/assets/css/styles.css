@@ -442,7 +442,7 @@ header #logo img {
 /** Footer **/
 footer {
 	color: #FFF;
-	padding: 90px 0 25px 0;
+	padding: 25px 0 25px 0;
 	background-color: #0d222c;
 }
 
@@ -451,11 +451,19 @@ footer hr {
 	margin: 80px 0;
 }
 
+footer .box-contact {
+	text-align: right;
+}
+
+footer .phone {
+	margin: 0 25px;	
+}
+
 footer .title {
     font-size: 18px;
     color: #fff;
-    margin: 15px 0;
-    padding: 0;
+    margin: 15px 30px;
+	padding: 0;
 }
 
 footer .link {
@@ -487,5 +495,24 @@ footer #menus ul li a {
 	color: #999;
 	line-height: 30px;
 	font-weight: 300;
+}
+
+@media only screen and (max-width: 768px){
+	footer #logo {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	footer .box-contact {
+		text-align: center;
+	}
+
+	footer .phone {
+		margin: 0;	
+	}
+	
+	footer .title {
+		margin: 15px 0;
+	}
 }
 /** Footer **/
