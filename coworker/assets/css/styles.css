@@ -246,25 +246,23 @@ header #logo img {
 
 
 /** #boxImagePrincipal **/
-#boxImagePrincipal {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/quote.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	padding: 80px 250px;
+#boxImagePrincipal img {
+	object-fit: cover;
+    width: 100%;
+    height: 600px;
 }
 
-#boxImagePrincipal h2 {
+#boxImagePrincipal .bg-overlay h2 {
 	font-size: 32px;
     line-height: 28px;
-    margin: 0 0 30px;
+    margin: 50px 0 30px;
     padding: 0;
     text-align: center;
 	color: #fff;
 	font-weight: bold;
 }
 
-#boxImagePrincipal p {
+#boxImagePrincipal .bg-overlay p {
 	font-size: 16px;
     line-height: 26px;
     margin: 0 0 30px;
@@ -275,7 +273,19 @@ header #logo img {
 	line-height: 30px;
 }
 
-@media only screen and (max-width: 768px){ 
+.bg-overlay{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px){
+	#boxImagePrincipal img{
+		height: 300px;
+	}
+
 	#boxImagePrincipal {
 		padding: 30px 0;
 	}
@@ -283,129 +293,59 @@ header #logo img {
 /** #boxImagePrincipal **/
 
 
-/** #boxMemberDescription **/
-#boxMemberDescription {
-	margin-top: 100px;
-}
-
-#boxMemberDescription h2 {
-	font-weight: bold;
-    font-size: 32px;
-    line-height: 28px;
-    margin: 0 0 20px;
-    padding: 0;
-    color: #0d222c;
-}
-
-#boxMemberDescription p {
-	font-weight: 300;
-	color: #4a5a62;
-    font-size: 16px;
-    line-height: 26px;
-    padding: 0;
-    margin: 0;
-}
-
-#boxMemberDescription .float {
-	text-align: right;
-}
-
-@media only screen and (max-width: 768px){
-	#boxMemberDescription .float{
-		text-align: center;
-	}
-}
-/** #boxMemberDescription **/
-
-
-/** #boxPrice **/
-#boxPrice{
+/** #boxPhotosHome **/
+#boxPhotosHome {
 	margin-top: 30px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
-#boxPrice h3 {
-	font-size: 27px;
-    line-height: 24px;
-    color: #0d222c;
-    margin: 0;
-    text-align: left;
-    margin-top: 5px;
+#boxPhotosHome h3 {
+	margin: 30px 0 30px 0;
 }
 
-#boxPrice .box-shadow {
-	min-height: 400px;
-	padding: 25px 20px;
+#boxPhotosHome .principal {
+	object-fit: cover;
+    width: 100%;
+	height: 350px;
+	margin-bottom: 30px;
 }
 
-#boxPrice .boxAboutDescription img{
-	width: 100%;
-}
-
-#boxPrice .boxAboutDescriptionItens h3 {
-	font-family: avenir_demi,sans-serif;
-    font-size: 22px;
-    line-height: 24px;
-    color: #0d222c;
-    margin: 30px 0 15px;
-}
-
-#boxPrice .boxAboutDescriptionItens p {
-	color: #4a5a62;
-	font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 0;
-	margin: 0;
-}
-
-#boxPrice .boxAboutDescriptionItens ul {
-	padding-inline-start: 0;
-	margin: 30px 0 15px 0;
-}
-
-#boxPrice .boxAboutDescriptionItens ul li{
-	list-style: none;
-	color: #4a5a62;
-	font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 0;
-	margin: 0;
-	margin-bottom: 15px;
-}
-
-#boxPrice .box-about-description-price-mobile {
-	display: none;
-}
-
-#boxPrice .box-about-description-price {
-	margin-top: 20px;
-}
-
-#boxPrice .box-about-description-price-mobile {
-	margin-top: 15px;
-	margin-bottom: 35px;
-}
-
-#boxPrice .box-about-description-price span, #boxPrice .box-about-description-price-mobile span {
-	font-weight: bold;
-}
-
-#boxPrice .box-about-description-price a, #boxPrice .box-about-description-price-mobile a {
-	text-decoration: none;
+#boxPhotosHome .secondary {
+	object-fit: cover;
+    width: 100%;
+	height: 160px;
+	margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 768px){
-	#boxPrice .box-about-description-price {
-		display: none;
-	}
-	
-	#boxPrice .box-about-description-price-mobile {
-		display: block;
+	#boxPhotosHome .principal {
+		object-fit: cover;
+		width: 100%;
+		height: 160px;
+		margin-bottom: 30px;
 	}
 }
-/** #boxPrice **/
+/** #boxPhotosHome **/
+
+
+/** #boxDescription **/
+#boxDescription {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#boxDescription h3{
+	margin: 30px 0 30px 0;
+}
+
+#boxDescription .box-button{
+	margin-top: 115px;
+}
+
+@media only screen and (max-width: 768px){
+	
+}
+/** #boxDescription **/
 
 
 /** #boxPhotos **/
@@ -456,13 +396,13 @@ footer .box-contact {
 }
 
 footer .phone {
-	margin: 0 25px;	
+	margin: 0 35px;	
 }
 
 footer .title {
     font-size: 18px;
     color: #fff;
-    margin: 15px 30px;
+    margin: 15px 40px;
 	padding: 0;
 }
 
